@@ -1,0 +1,21 @@
+group 'ooseguru'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.karaf.jpa:hibernate:4.0.4'
+    compile 'mysql:mysql-connector-java:5.1.38'
+    testCompile 'junit:junit:4.11'
+}
+
+task execute(type: org.gradle.api.tasks.JavaExec) {
+    main = "ooseguru.usermgmt.Main"
+    classpath = sourceSets.main.runtimeClasspath
+}
