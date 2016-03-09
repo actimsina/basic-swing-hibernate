@@ -7,15 +7,22 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.awt.*;
+
 /**
  * Created by achyut on 3/8/16.
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello from Gradle");
 
-        StudentView sv = new StudentView();
-        sv.createStudentView();
+        EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                StudentView sv = new StudentView();
+                sv.createStudentView();
+            }
+        });
+
 
 //        SessionFactory sf = new Configuration().configure().buildSessionFactory();
 //        Session se = sf.openSession();
