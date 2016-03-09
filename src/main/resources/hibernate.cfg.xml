@@ -18,9 +18,10 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!--Drop and re-create the database schema on startup-->
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <!--update will not re-create the schema-->
         <!--Names of the annotated entity classes-->
         <mapping class="ooseguru.usermgmt.model.User"/>
+        <mapping class="ooseguru.usermgmt.model.Student"/>
     </session-factory>
 </hibernate-configuration>
