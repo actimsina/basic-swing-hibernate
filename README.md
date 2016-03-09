@@ -4,3 +4,4 @@ application. The Student Model class is persisted to the
 database. Value for Student's Name attribute is read from
 the Swing TextField element.
 
+Main class to look at is `StudentView.java`.
