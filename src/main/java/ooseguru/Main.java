@@ -1,9 +1,6 @@
 package ooseguru;
 
-import ooseguru.model.User;
-import ooseguru.util.HibernateUtil;
 import ooseguru.view.UserView;
-import org.hibernate.Session;
 
 import java.awt.*;
 

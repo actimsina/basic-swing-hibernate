@@ -46,9 +46,10 @@ public class UserView implements ActionListener {
 
         userPanel.add(lastNameLbl);
         userPanel.add(lastNameFld);
+        userPanel.add(addUserBtn);
 
         userFrame.getContentPane().add(BorderLayout.CENTER,userPanel);
-        userFrame.getContentPane().add(BorderLayout.SOUTH, addUserBtn);
+//        userFrame.getContentPane().add(BorderLayout.SOUTH, addUserBtn);
     }
     @Override
     public void actionPerformed(ActionEvent e) {
