@@ -1,18 +1,19 @@
 package ooseguru.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by achyut on 3/13/16.
  */
 @Entity
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue
     private int id;
+    @Column(name = "first_name")
     private String firstName;
+    @Column(name = "last_name")
     private String lastName;
 
     public int getId() {

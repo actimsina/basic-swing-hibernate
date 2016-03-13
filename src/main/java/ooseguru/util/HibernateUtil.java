@@ -7,6 +7,10 @@ import org.hibernate.service.ServiceRegistry;
 
 /**
  * Created by achyut on 3/10/16.
+ * It's main responsibility is make sure that the entire hibernate application
+ * has only one SessionFactory.
+ * It is used to get Session from the SessionFactory, and
+ * close the SessionFactory once all operations complete
  */
 public class HibernateUtil{
 
